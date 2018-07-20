@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="https://github.com/orgs/essence-eic/dashboard"
+        id="cordova-plugin-audioio"
+        version="0.0.1">
+  <name>AudioIO</name>
+
+  <engines>
+    <engine name="cordova" version=">=7.0.0"/>
+  </engines>
+
+  <asset src="www/audioio.js" target="js/audioio.js"/>
+
+  <js-module src="www/audioio.js" name="audioio">
+    <clobbers target="cordova.plugins.audioio" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="AudioIO">
+        <param name="android-package" value="com.eic.plugin.audioio.AudioIO"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/AudioIO.java" target-dir="src/com/eic/audioio/"/>
+  </platform>
+
+  <platform name="ios">
+    
+    <config-file target="config.xml" parent="/widget">
+      <feature name="AudioIO">
+        <param name="ios-package" value="AudioIO" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/AudioIO.h"/>
+    <source-file src="src/ios/AudioIO.m"/>
+  </platform>
+
+
+</plugin>

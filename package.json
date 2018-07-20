@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-audioio",
+  "version": "1.0.0",
+  "description": "Plugin to manage audio input output",
+  "cordova": {
+    "id": "cordova-plugin-audioio",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/essence-eic/cordova-plugin-audioio.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "eic",
+    "audio",
+    "input",
+    "output"
+  ],
+  "author": "Eic",
+  "license": "Apache-2",
+  "bugs": {
+    "url": "https://github.com/essence-eic/cordova-plugin-audioio/issues"
+  },
+  "homepage": "https://github.com/essence-eic/cordova-plugin-audioio#readme"
+}
